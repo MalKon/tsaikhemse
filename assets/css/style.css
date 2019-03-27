@@ -76,7 +76,7 @@ body{
 } 
 /*keyframes end*/
 /*header starts*/
-header, ul{
+header{
 	display: flex;
 }
 header{
