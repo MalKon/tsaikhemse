@@ -68,9 +68,9 @@ function navbarTogglerClick() {
 
   list.insertBefore(newItem, list.children[0]); //პირველ ul-ში ჩავწეროთ li პირველ ელემენტად
 
-  if(!navbarMenu.contains('open') ){
-    remove.list;
-  }
+//   if(!navbarMenu.contains('open') ){
+//     remove.list;
+//   }
 }
 
 // რუკის შემოტანა
