@@ -76,7 +76,7 @@ body{
 } 
 /*keyframes end*/
 /*header starts*/
-header, ul{
+header, ul {
 	display: flex;
 }
 header{
@@ -84,11 +84,11 @@ header{
 	height: 60px;
 	align-items: center;
 }
-.header-navigation{
-	width: 214px;
+.header-navigation {
+	display: flex;
 	justify-content: space-between;
+	width: 214px;
 }
-
 a {
 	color: #fff;
 	transition: 300ms color ease;
@@ -424,13 +424,11 @@ a.contact_num:hover{
   animation-fill-mode: both;
   animation-name: btnEntrance;
 }
-
 .btnExit {
   animation-duration: 0.25s;
   animation-fill-mode: both;  
   animation-name: btnExit;
 }
-
 /*scroll to top end*/
 /*Responsive*/
 @media only screen and (min-width: 0px) and (max-width: 479px){
@@ -453,11 +451,11 @@ a.contact_num:hover{
 		cursor: pointer;
 	}
 	.navbar-toggler span, .navbar-toggler span::before, .navbar-toggler span::after {
-		display: block;
 		content: '';
-		background-color: #fff;
+		display: block;
 		height: 3px;
-		width: 10px;
+		width: 15px;
+		background-color: #fff;
 		border-radius: 10px;
 		transition: all ease-in-out 0.3s;
 	}
@@ -479,9 +477,9 @@ a.contact_num:hover{
 	/*toggler end*/
 	nav.open {
 		max-height: 100vh;
+		display: flex;
 	}
 	nav {
-		display: flex;
 		position: absolute;
 		left: 0;
 		top: 60px;
@@ -493,14 +491,14 @@ a.contact_num:hover{
 		overflow: hidden;
 		transition: all ease-in-out 0.3s;	
 	}
-	nav.open .header-navigation {
+	.open .header-navigation {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;	
 		width: 100%;
 	}
-	nav.open .header-navigation::after {
+	.open .header-navigation::after {
 		content: '';
 		display: block;
 		width: 90vw;
