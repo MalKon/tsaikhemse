@@ -53,24 +53,6 @@ navbarToggler.addEventListener("click", navbarTogglerClick);
 function navbarTogglerClick() {
   navbarToggler.classList.toggle("open-navbar-toggler");
   navbarMenu.classList.toggle("open");
-
-  list = document.getElementsByTagName('ul')[0];
-
-  newItem = document.createElement('li'); //შევქმნათ li ელემენტი
-  firstChild = list.appendChild(newItem); //ul-ში ჩავსვათ li ელემენტი
-  a = document.createElement('a'); //შევქმნათ a ელემენტი
-  newText = document.createTextNode('მთავარი'); //შევქმნათ ტექსტი
-  a.appendChild(newText); //a-ში ჩავწეროთ ტესქტი
-  att = document.createAttribute("href"); //create attribute href
-  att.value = "index.html"; //href="index.html"
-  a.setAttributeNode(att); //a-ში ჩავწეროთ ატრიბუტი                   
-  firstChild.appendChild(a); //li-ში ჩავწეროთ a
-
-  list.insertBefore(newItem, list.children[0]); //პირველ ul-ში ჩავწეროთ li პირველ ელემენტად
-
-//   if(!navbarMenu.contains('open') ){
-//     remove.list;
-//   }
 }
 
 // რუკის შემოტანა
