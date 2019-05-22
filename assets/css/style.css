@@ -531,7 +531,7 @@ a.contact_num:hover{
 	}
 	.main_link {
 		position: absolute;
-		right: -500px;
+		top: -500px;
 		visibility: hidden;
 	}
 	a{
